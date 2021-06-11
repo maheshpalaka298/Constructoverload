@@ -1,0 +1,41 @@
+/*To Implement Consruct overloading*/
+import java.util.*;
+class Constructoverload
+	{
+		public Constructoverload(double l)
+		{
+			double area;
+			area=l*l;
+			System.out.println("The area is : "+area);
+		}
+		public Constructoverload(int len,int breadth)
+		{
+			int area;
+			area=len*breadth;
+			System.out.println("The area is : "+area);
+		}
+		public static void main(String[] args)
+		{
+			int m,n;
+			double x;
+			Scanner sc=new Scanner(System.in);
+			System.out.println("Enter  integer two values : ");
+			m=sc.nextInt();
+			n=sc.nextInt();
+			System.out.println("Enter double value : ");
+			x=sc.nextDouble();	
+			Constructoverload a=new Constructoverload(m,n);
+			Constructoverload b=new Constructoverload(x);
+	}
+}
+
+//Output//
+
+Enter  integer two values :
+67
+89
+Enter double value :
+67.8
+The area is : 5963
+The area is : 4596.839999999999
+Press any key to continue . . .
